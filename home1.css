@@ -1,0 +1,84 @@
+* {
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box;
+}
+
+body {
+    /* width: 100%;
+    height: 100vh; */
+}
+
+
+/* main container section*/
+.mainCont {
+    /* width: 100%; */
+    height: 100vh;
+    background-color: aquamarine;
+    display: flex;
+}
+
+/* LEFT SIDE BARE*/
+.lSidBar {
+    width: 10%;
+    min-width: 5vh;
+    background-color: darkgreen;
+    /* border-right: 1px solid rgb(247, 255, 234); */
+}
+.lSidBar .row {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+
+/* RIGHT SIDE BARE*/
+.rSidBar {
+    width: 90%;
+    background-color: darkcyan;
+    overflow: hidden;
+}
+
+
+/* TOP BARE */
+.topRow {
+    height: auto;
+    background-color: darkgoldenrod;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.topRow .lmn {
+    text-align: center;
+    background-color: red;
+}
+.lisTopRow {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+.lisTopRow li {
+    background-color: gray;
+}
+
+
+/* MIDDLE CONTENT*/
+.midRow {
+    height: 90%;
+    overflow: auto;
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+}
+.midRow .sqrs {
+    /* width: 45%; */
+    height: 45%;
+    color: white;
+    background-color: rgb(89, 0, 255);
+    border: 2px solid rgb(189, 153, 255);
+}
+
+                /* INSIDE SQRS */

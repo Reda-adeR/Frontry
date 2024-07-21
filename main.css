@@ -1,0 +1,170 @@
+:root {
+  --primary: #FFCE00;
+  --secondary: #FE4880;
+  --dark: #212121;
+  --light: #F3F3F3;
+  --grey: #9E9E9E;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: montserrat, sans-serif;
+  background-image: url('bg-image.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mytitle {
+  height: 12vh;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  text-shadow: 4px 3px 0 #7A7A7A;
+}
+
+#particles-js {
+  margin-top: 100px;
+  position: absolute;
+  width: 100%;
+  height: 70%;
+  opacity: 0.7;
+}
+
+.card {
+  width: 150vh;
+  height: 75vh;
+  perspective: 3000px;
+  background: rgba( 255, 255, 255, 0 );
+  border: none;
+  color : white;
+}
+
+.card__inner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
+}
+
+.card__inner.is-flipped {
+  transform: rotateY(180deg);
+}
+
+.card__face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  overflow: hidden;
+  border-radius: 5px;
+  border-right: 1px solid var(--grey);
+  border-bottom: 1px solid var(--grey);
+  box-shadow: 0px 3px 18px 3px rgb(255, 255, 255);
+  animation-delay: 5s;
+  animation: shado 2s ease-in-out infinite;
+}
+
+.card__face--front {
+  background: rgba( 255, 255, 255, 0.1 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 1.5px );
+-webkit-backdrop-filter: blur( 1.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.card__face--back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba( 255, 255, 255, 0.1 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 1.5px );
+-webkit-backdrop-filter: blur( 1.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+  transform: rotateY(180deg);
+}
+
+.login {
+  width: 12vh;
+  height: 6vh;
+  border-radius: 5%;
+  border: none;
+  background-color: #fafb7c;
+}
+
+.loginhover {
+  width: 12vh;
+  height: 6vh;
+  border-radius: 5%;
+  border: none;
+  background-color: #ff9838;
+}
+
+
+.card__content {
+  width: 100%;
+  height: 100%;
+}
+
+ @keyframes shado {
+  50% {
+    box-shadow: 0px 5px 22px 6px rgb(255, 255, 255);
+  }
+}
+
+/* ANIMATION TITLE */
+
+.loader {
+  position: relative;
+  height: 45px;
+  width: 35px;
+  color: #FFF;
+  border-bottom : 6px solid white;
+}
+
+.loader:before {
+  content: "";
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 15px;
+  width: 12px;
+  height: 12px;
+  background-color: #94f2f4;
+  border-radius: 50%;
+  animation: ballbounce 0.8s ease-out infinite;
+}
+
+@keyframes ballbounce {
+  0% { transform: translateY(-20px) scale(1, 1.2) }
+  25% { transform: scale(1.2, 1) }
+  50% { transform: translateY(15px) scale(1, 1.2) }
+  75% { transform: scale(1.2, 1) }
+  100% { transform: translateY(-20px) }
+}
+      
+/* TEXT INSIDE CARD CSS */
+

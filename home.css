@@ -1,0 +1,79 @@
+/* INIT PAGE CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    /* overflow: hidden; */
+}
+
+.full-container {
+    width: 100%;
+    height: 100%;
+}
+
+.rowz {
+    height: 100%;
+}
+
+.coool, .p-5  {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.coool li {
+    width: 25px;
+    height: 100%;
+    border-radius: 50%;
+    text-align: center;
+    background-color: green;
+    color: white;
+}
+
+.sideBar {
+    height: 100%;
+    background-color: darkgrey;
+}
+
+.topSide {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between ;
+    height: auto;
+}
+
+.middleCont {
+    /* width: 100%; */
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rebeccapurple;
+}
+
+.leftSide {
+    height: 100vh;
+    background-color: aquamarine !important;
+}
+
+.middleCont .row {
+    height: 50vh;
+    /* margin: 1em; */
+    /* height: 50%; */
+}
+
+
+/** tests **/
+
+.sideBflex {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
